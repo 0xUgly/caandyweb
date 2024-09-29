@@ -5,6 +5,7 @@ import Slideshow from './Slideshow';
 import Footer from './footer';
 import Image from 'next/image';
 import Link from 'next/link';
+import { PlayCircle } from "lucide-react"
 interface GameSelectionUIProps {
   isLoading: boolean;
   selectedGame: string;
@@ -18,7 +19,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
         <Header 
     />
 <main className='h-screen overflow-y-auto pt-24  flex flex-col w-screen dark:bg-gradient-to-t from-[#391830] to-[#010601] bg-gradient-to-t from-[#0B4034] to-[#010601]'>  
-  <div className='flex-1 overflow-y-auto'>
+
     <div className='pt-4 flex flex-col gap-2 p-5'>   
        <div className='flex flex-col gap-2 z-0'>
             <div className='flex justify-between pt-5 dark:text-white text-xl text-white'>
@@ -50,6 +51,44 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                       > 
                         <div className='text-black font-zk  p-1 pl-6 rounded-2xl pr-6 bg-[#FF00CC]'>Play</div>
                         </button>
+                      </div>
+                    </div> 
+
+
+                    <div className="h-[57px] w-[345px] rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
+                      <div className='h-full w-full flex items-center gap-4'>
+                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/Rectangle 27.png')`}}></div>
+                        <div className='text-white font-zk'>Space&apos;s Quest</div>
+                      </div>
+                      <div>
+                      
+                      <div className="flex items-center">
+                <span className="text-gray-400 text-xs mr-2">Coming Soon</span>
+                <div className="w-4 h-4 relative">
+                  <div className="absolute inset-0 border-2 border-gray-600 rounded-full"></div>
+                  <div className="absolute inset-0 border-2 border-pink-500 rounded-full animate-ping"></div>
+                </div>
+              </div>
+                       
+                      </div>
+                    </div> 
+                    
+
+                    <div className="h-[57px] w-[345px] rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
+                      <div className='h-full w-full flex items-center gap-4'>
+                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/Rectangle 27.png')`}}></div>
+                        <div className='text-white font-zk'>Fire Arms</div>
+                      </div>
+                      <div>
+                      
+                      <div className="flex items-center">
+                <span className="text-gray-400 text-xs mr-2">Coming Soon</span>
+                <div className="w-4 h-4 relative">
+                  <div className="absolute inset-0 border-2 border-gray-600 rounded-full"></div>
+                  <div className="absolute inset-0 border-2 border-pink-500 rounded-full animate-ping"></div>
+                </div>
+              </div>
+                       
                       </div>
                     </div> 
   
@@ -166,7 +205,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
             </div>
             
             </div>
-            </div>
+           
     </main>
     <Footer/>
     </>
