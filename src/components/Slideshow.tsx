@@ -40,10 +40,9 @@ const Slideshow: React.FC = () => {
 
   const slides: SlideProps[] = [
     
-    { imageUrl: "/slideimg/CityJump.png", alt: "Image 2 description" },
+    { imageUrl: "/slideimg/ZOOKcanner.png", alt: "Image 2 description" },
 
-    { imageUrl: "/slideimg/Escapethe pit.png", alt: "Image 4 description" },
-    { imageUrl: "/slideimg/Trailblazer.png", alt: "Image 4 description" },
+   
   ];
 
   return (
