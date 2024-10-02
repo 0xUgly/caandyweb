@@ -32,7 +32,20 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
        <div className=' text-xl font-semibold mt-4 ' >
         
           <div className='flex flex-row gap-2 dark:text-white text-white sm:items-center sm:justify-center'>
-           <div className='font-zk text-[#D9D9D9] font-bold'>GAMES</div> </div>
+           <div className='flex gap-1 font-zk text-[#D9D9D9] font-bold'>GAMES
+           <Image
+           src='/shapes/Rectangle 1647.svg'
+           alt=''
+           height={2}
+           width={268}
+           />
+            <Image
+           src='/shapes/Vector 5.svg'
+           alt=''
+           height={24}
+           width={24}
+           />
+            </div> </div>
              </div>
 
 
