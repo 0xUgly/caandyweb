@@ -13,7 +13,7 @@ function Header() {
         <div className='flex flex-row items-center justify-start  dark:text-white text-white'>
         <div>
           <Image
-          src='/ZKcandy - Monochrome Transparent Light 3 (1).png'
+          src='/ZKLOGO.png'
           alt=''
           height={80}
           width={80}

@@ -32,7 +32,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
        <div className=' text-xl font-semibold mt-4 ' >
         
           <div className='flex flex-row gap-2 dark:text-white text-white sm:items-center sm:justify-center'>
-           <div className='font-zk text-[#D9D9D9]'>GAMES</div> </div>
+           <div className='font-zk text-[#D9D9D9] font-medium'>GAMES</div> </div>
              </div>
 
 
@@ -55,42 +55,10 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                     </div> 
 
 
-                    <div className="h-[57px] w-[345px] rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
-                      <div className='h-full w-full flex items-center gap-4'>
-                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/Rectangle 27.png')`}}></div>
-                        <div className='text-white font-zk'>Space&apos;s Quest</div>
-                      </div>
-                      <div>
-                      
-                      <div className="flex items-center">
-                <span className="text-gray-400 text-xs mr-2">Coming Soon</span>
-                <div className="w-4 h-4 relative">
-                  <div className="absolute inset-0 border-2 border-gray-600 rounded-full"></div>
-                  <div className="absolute inset-0 border-2 border-pink-500 rounded-full animate-ping"></div>
-                </div>
-              </div>
-                       
-                      </div>
-                    </div> 
+                   
                     
 
-                    <div className="h-[57px] w-[345px] rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
-                      <div className='h-full w-full flex items-center gap-4'>
-                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/Rectangle 27.png')`}}></div>
-                        <div className='text-white font-zk'>Fire Arms</div>
-                      </div>
-                      <div>
-                      
-                      <div className="flex items-center">
-                <span className="text-gray-400 text-xs mr-2">Coming Soon</span>
-                <div className="w-4 h-4 relative">
-                  <div className="absolute inset-0 border-2 border-gray-600 rounded-full"></div>
-                  <div className="absolute inset-0 border-2 border-pink-500 rounded-full animate-ping"></div>
-                </div>
-              </div>
-                       
-                      </div>
-                    </div> 
+                
   
   
 
