@@ -41,6 +41,7 @@ const Slideshow: React.FC = () => {
   const slides: SlideProps[] = [
     
     { imageUrl: "/slideimg/ZOOKcanner.png", alt: "Image 2 description" },
+    { imageUrl: "/slideimg/TrailblazerZk.png", alt: "Image 2 description" },
 
    
   ];

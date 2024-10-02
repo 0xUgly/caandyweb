@@ -23,7 +23,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
     <div className='pt-4 flex flex-col gap-2 p-5'>   
        <div className='flex flex-col gap-2 z-0'>
             <div className='flex justify-between pt-5 dark:text-white text-xl text-white'>
-            <div className='font-zk text-[#D9D9D9]'>EXTRAS</div>
+            <div className='font-zk text-[#D9D9D9] font-bold'>EXTRAS</div>
                 
             </div>
         
@@ -32,7 +32,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
        <div className=' text-xl font-semibold mt-4 ' >
         
           <div className='flex flex-row gap-2 dark:text-white text-white sm:items-center sm:justify-center'>
-           <div className='font-zk text-[#D9D9D9] font-medium'>GAMES</div> </div>
+           <div className='font-zk text-[#D9D9D9] font-bold'>GAMES</div> </div>
              </div>
 
 
@@ -49,7 +49,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                       disabled={isLoading}
                       
                       > 
-                        <div className='text-black font-zk  p-1 pl-6 rounded-2xl pr-6 bg-[#FF00CC]'>Play</div>
+                        <div className='text-white font-zk font-bold p-1 pl-6 rounded-2xl pr-6 bg-[#FF00CC]'>Play</div>
                         </button>
                       </div>
                     </div> 
