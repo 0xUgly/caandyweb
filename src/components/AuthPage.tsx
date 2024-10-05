@@ -23,7 +23,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
     <div className='pt-4 flex flex-col gap-2 p-5'>   
        <div className='flex flex-col gap-2 z-0'>
             <div className='flex justify-between w-full pt-5 dark:text-white text-xl border-b-2 border-[#5F5F5F]  text-white'>
-            <div className='font-zk text-[#D9D9D9] text-[17px] font-bold'>Welcome to Zook&apos;s quest telegram bot</div>
+            <div className='font-zk text-[#D9D9D9] text-[17px] font-bold'>Welcome to Zook&apos;s quest telegram bot.</div>
                 
             </div>
         
