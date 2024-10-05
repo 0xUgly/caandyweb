@@ -22,23 +22,18 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
 
     <div className='pt-4 flex flex-col gap-2 p-5'>   
        <div className='flex flex-col gap-2 z-0'>
-            <div className='flex justify-between pt-5 dark:text-white text-xl text-white'>
-            <div className='font-zk text-[#D9D9D9] font-bold'>Welcome To Zook&apos;S quest telegram bot</div>
+            <div className='flex justify-between w-full pt-5 dark:text-white text-xl border-b-2 border-[#5F5F5F]  text-white'>
+            <div className='font-zk text-[#D9D9D9] text-[17px] font-bold'>Welcome to Zook&apos;s quest telegram bot</div>
                 
             </div>
         
             </div>
        <Slideshow/>
-       <div className=' text-xl font-semibold mt-4 ' >
+       <div className=' text-xl font-semibold mt-4 w-full border-b-2 border-[#5F5F5F]' >
         
           <div className='flex flex-row gap-2 dark:text-white text-white sm:items-center sm:justify-center'>
-           <div className='flex gap-1 font-zk text-[#D9D9D9] font-bold'>GAMES
-           <Image
-           src='/shapes/Rectangle 1647.svg'
-           alt=''
-           height={2}
-           width={268}
-           />
+           <div className='flex justify-between w-full font-zk text-[#D9D9D9] font-bold'>GAMES
+          
             <Image
            src='/shapes/Vector 5.svg'
            alt=''
