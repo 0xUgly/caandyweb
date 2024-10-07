@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       fontFamily:{
         title:["Staatliches", "sans-serif"],
-        zk :["Epilogue", "sans-serif" ]
+        zk :["Epilogue", "sans-serif" ],
+        baloo :["Baloo Da 2", 'sans-serif'],
       }
     },
   },
