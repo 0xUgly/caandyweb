@@ -56,7 +56,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                       </div>
                     </div>
             </div>
-            <div className='w-full flex items-center text-white  font-zk text-center justify-center'>More Games Coming Soon!</div>
+            <div className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center'>More Games Coming Soon!</div>
            
     </main>
     <Footer/>
