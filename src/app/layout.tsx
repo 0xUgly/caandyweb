@@ -3,16 +3,16 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import './global.css'
-import Header from "@/components/Header";
-import Footer from "@/components/footer";
-const inter = Inter({ subsets: ["latin"] });
 
+const inter = Inter({ subsets: ["latin"] });
+import ConditionalLayout from "@/components/ConditionalLayout";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en" style={{ overflow: "hidden", height: "100%" }}>
       <head>
@@ -25,7 +25,7 @@ export default function RootLayout({
         className={inter.className}
         style={{ overflow: "hidden", height: "100%", margin: 0 }}
       >
-         <Header /> {children} <Footer/>
+         <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
