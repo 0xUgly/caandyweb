@@ -6,6 +6,8 @@ import Footer from './footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlayCircle } from "lucide-react"
+import { useInView } from "framer-motion"
+import { useRef } from 'react';
 interface GameSelectionUIProps {
   isLoading: boolean;
   selectedGame: string;
@@ -14,10 +16,12 @@ interface GameSelectionUIProps {
 const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedGame, onGameSelect }) => {
 
   const [activeButton, setActiveButton] = useState('');
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <>
-      
-<main className='h-screen overflow-y-auto pt-24  flex flex-col w-screen dark:bg-gradient-to-t from-[#391830] to-[#010601] bg-gradient-to-t from-[#0B4034] to-[#010601]'>  
+      <Header/>
+<main className='min-h-screen pb-64 flex flex-col w-screen dark:bg-gradient-to-t from-[#391830] to-[#010601] bg-gradient-to-t from-[#0B4034] to-[#010601]'>  
 
     <div className='pt-4 flex flex-col gap-2 p-5'>   
        <div className='flex flex-col gap-2 z-0'>
@@ -56,7 +60,11 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                       </div>
                     </div>
             </div>
-            <div className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center'>More Games Coming Soon!</div>
+            <div ref={ref} className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center' style={{
+          transform: isInView ? "none" : "translateX(-300px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}>More Games Coming Soon!</div>
            
     </main>
     <Footer/>
