@@ -16,8 +16,7 @@ interface GameSelectionUIProps {
 const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedGame, onGameSelect }) => {
 
   const [activeButton, setActiveButton] = useState('');
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+
   return (
     <>
       <Header/>
@@ -60,11 +59,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                       </div>
                     </div>
             </div>
-            <div ref={ref} className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center' style={{
-          transform: isInView ? "none" : "translateX(-300px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-        }}>More Games Coming Soon!</div>
+            <div className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center'>More Games Coming Soon!</div>
            
     </main>
     <Footer/>
