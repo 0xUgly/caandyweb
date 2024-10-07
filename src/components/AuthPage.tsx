@@ -16,13 +16,12 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
   const [activeButton, setActiveButton] = useState('');
   return (
     <>
-        <Header 
-    />
+      
 <main className='h-screen overflow-y-auto pt-24  flex flex-col w-screen dark:bg-gradient-to-t from-[#391830] to-[#010601] bg-gradient-to-t from-[#0B4034] to-[#010601]'>  
 
     <div className='pt-4 flex flex-col gap-2 p-5'>   
        <div className='flex flex-col gap-2 z-0'>
-            <div className='flex justify-between w-full pt-5 dark:text-white text-xl border-b-2 border-[#5F5F5F]  text-white'>
+            <div className='flex justify-between w-full pt-5 dark:text-white text-xl   text-white'>
             <div className='font-zk text-[#D9D9D9] text-[17px] font-bold'>Welcome to Zook&apos;s quest telegram bot.</div>
                 
             </div>
@@ -34,12 +33,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
           <div className='flex flex-row gap-2 dark:text-white text-white sm:items-center sm:justify-center'>
            <div className='flex justify-between w-full font-zk text-[#D9D9D9] text-[17px] font-bold'>Games
           
-            <Image
-           src='/shapes/Vector 5.svg'
-           alt=''
-           height={24}
-           width={24}
-           />
+            
             </div> </div>
              </div>
 
@@ -60,126 +54,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                         <div className='text-white font-zk font-bold p-1 pl-6 rounded-2xl pr-6 bg-[#FF00CC]'>Play</div>
                         </button>
                       </div>
-                    </div> 
-
-
-                   
-                    
-
-                
-  
-  
-
-
-  
-
-
-         {/* <div className="snap-center snap-always flex-shrink-0">
-    <button
-      onClick={() => setActiveButton('Taiko')}
-      className={`p-1 pl-6 pr-6 rounded-xl  bg-gradient-to-t from-white to-[#00FF62] font-bold whitespace-nowrap ${
-        activeButton === 'Taiko' ? 'bg-gradient-to-t from-white to-[#00FF62] text-black' : 'opacity-50 bg-transparent'
-      }`}
-    >
-      Taiko
-    </button>
-         </div> */}
-
-
-         {/* <div className="snap-center snap-always flex-shrink-0">
-    <button
-      onClick={() => setActiveButton('TON')}
-      className={`p-1 pl-6 pr-6 rounded-xl  bg-gradient-to-t from-white to-[#00FF62] font-bold whitespace-nowrap ${
-        activeButton === 'TON' ? 'bg-gradient-to-t from-white to-[#00FF62] text-black' : 'opacity-50 bg-transparent'
-      }`}
-    >
-      TON
-    </button>
-         </div> */}
-
-
-{/* logic */}
-{/* binance */}
-      <div className='pt-4'>
-         {activeButton === 'binance' && (
-                <div className="flex flex-col items-center w-full gap-5">
-                
-                {/*  */}
-                
-                    {/* <div className="h-[57px] w-[345px] rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
-                      <div className='h-full w-full flex items-center gap-4'>
-                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/ChainKnight.png')`}}></div>
-                        <div className='text-white  font-bold'>Trail Blazer on base</div>
-                      </div>
-                      <div>
-                      <button 
-                      onClick={() => onGameSelect("unity")}
-                      disabled={isLoading}
-                      >
-                        <div className='text-black font-title p-1 pl-6 rounded-xl pr-6 bg-gradient-to-t from-white to-[#00FF62]'>Play</div>
-                      </button>
-                      </div>
-                    </div> */}
-
-                
-                {/*  */}
-
-                
-                
-                               
-
-                {/*  */}
-
-
-             
-                
-                       
-                    {/* <div className="h-[57px] w-[345px] rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
-                      <div className='h-full w-full flex items-center gap-4'>
-                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/CosmicLeap.png')`}}></div>
-                        <div className='text-white  font-bold'>Trail Blazer</div>
-                      </div>
-                      <div>
-                      <button 
-                      onClick={() => onGameSelect("unity4")}
-                      disabled={isLoading}
-                      
-                      >
-                        <div className='text-bloack font-title p-1 pl-6 rounded-xl pr-6 bg-gradient-to-t from-white to-[#00FF62]'>Play</div>
-                      </button>
-                      </div>
-                    </div>      */}
-                       
-                           
-            </div>
-            )}
-
-
-{/* Base */}
-
-            {activeButton === 'base' && (
-               <div className="flex flex-col items-center w-full gap-5">
-                
-               {/*  */}
-               
-                  
-
-               
-               {/*  */}
-               
-                 
-                        
-           </div>
-            )}
-
-            {/* taiko */}
-            
-
-            
-
-
-            </div>
-            
+                    </div>
             </div>
             <div className='w-full flex items-center text-white  font-zk text-center justify-center'>More Games Coming Soon!</div>
            

@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import './global.css'
-
+import Header from "@/components/Header";
+import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -24,7 +25,7 @@ export default function RootLayout({
         className={inter.className}
         style={{ overflow: "hidden", height: "100%", margin: 0 }}
       >
-        {children}
+         <Header /> {children} <Footer/>
       </body>
     </html>
   );
