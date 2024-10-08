@@ -45,7 +45,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
 
              <div className="h-[57px] w-[345px] rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
                       <div className='h-full w-full flex items-center gap-4'>
-                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/Rectangle 27.png')`}}></div>
+                        <div className='h-full w-[57px] bg-center rounded-[14px] 'style={{backgroundImage: `url('/gameimg/ZOOKsQuest1080.png')`}}></div>
                         <div className='text-white font-zk'>Zook&apos;s Quest</div>
                       </div>
                       <div>
