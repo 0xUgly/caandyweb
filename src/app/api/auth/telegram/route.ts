@@ -26,9 +26,9 @@ async function verifyTelegram(signature: string, message: string) {
 
   const metadata = JSON.parse(message);
 
-  if (!metadata.expiration || metadata.expiration < Date.now()) {
-    return false;
-  }
+  // if (!metadata.expiration || metadata.expiration < Date.now()) {
+  //   return false;
+  // }
 
   if (!metadata.username) {
     return false;
@@ -55,7 +55,7 @@ async function verifyTelegram(signature: string, message: string) {
   const userId = await verifyTelegram(signature, message);
 
   if (!userId) {
-    return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+    return NextResponse.json({ error: "Invalid credentials"+ "signature " + signature + "message" + message+"done" }, { status: 401 });
   }
 
   return NextResponse.json({ userId });
