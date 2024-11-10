@@ -60,7 +60,7 @@ function TelegramLoginContent() {
 
     return (
         <div className="h-screen bg-black w-full flex items-center justify-center">
-           <div>please wait...</div>
+          <div className="font-bold font-zk text-white">Please wait...</div>
           </div>
     );
 }
@@ -72,6 +72,7 @@ export default function BinanceLogin () {
    <>
    <Suspense fallback={
           <div className="h-screen bg-black w-full flex items-center justify-center">
+            <div className="font-bold font-zk text-white">Please wait...</div>
           </div>
          }>
             <TelegramLoginContent />
