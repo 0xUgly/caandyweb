@@ -70,9 +70,12 @@ export default function BinanceLogin () {
 
   return (
    <>
-   
+   <Suspense fallback={
+          <div className="h-screen bg-black w-full flex items-center justify-center">
+          </div>
+         }>
             <TelegramLoginContent />
-      
+        </Suspense>
 
    </>
   );
