@@ -59,9 +59,8 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                       </div>
                     </div>
             </div>
-            <div className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center'>More Games Coming Soon!</div>
-
-{/* ZOOKS QUEST STAGE 2*/}
+            <div></div>
+            {/* ZOOKS QUEST STAGE 2*/}
 
             <div className="h-[57px] w-full rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
                       <div className='h-full w-full flex items-center gap-4'>
@@ -78,6 +77,11 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                         </button>
                       </div>
                     </div>
+
+
+            <div className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center'>More Games Coming Soon!</div>
+
+
 
     </main>
     <Footer/>
