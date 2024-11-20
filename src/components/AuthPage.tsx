@@ -43,7 +43,6 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
 
              
 {/* ZOOKS QUEST */}
-            <div className='pt-4 flex flex-col gap-2 p-5'>   
              <div className="h-[57px] w-full rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
                       <div className='h-full w-full flex items-center gap-4'>
                         <div className='h-full w-[57px] bg-center rounded-[14px] bg-cover'style={{backgroundImage: `url('/gameimg/ZOOKsQuest1080.png')`}}></div>
@@ -60,11 +59,10 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                       </div>
                     </div>
             </div>
-            </div>
-            <div></div>
+            {/* <div></div> */}
             {/* ZOOKS QUEST STAGE 2*/}
 
-            <div className="h-[57px] w-full rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
+            {/* <div className="h-[57px] w-full rounded-[14px] flex items-center justify-center gap-4 bg-transparent shrink-0 bg-center " >
                       <div className='h-full w-full flex items-center gap-4'>
                         <div className='h-full w-[57px] bg-center rounded-[14px] bg-cover'style={{backgroundImage: `url('/gameimg/ZookBOUNCEicon.png')`}}></div>
                         <div className='text-white font-zk'>Zook&apos;s Quest II</div>
@@ -78,7 +76,7 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
                         <div className='text-white font-zk font-bold p-1 pl-6 rounded-2xl pr-6 bg-[#FF00CC]'>Play</div>
                         </button>
                       </div>
-                    </div>
+                    </div> */}
 
 
             <div className='w-full flex items-center text-white text-[16px] font-zk text-center justify-center'>More Games Coming Soon!</div>
